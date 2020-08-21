@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pure CSS Netlfix Logo</title>
+	<style>
+		body{background:#26242e;}
+		.container{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: flex; 
+			width: 120px;
+			height: 200px;
+			overflow: hidden;
+		}
+		span{
+			position: absolute;
+			width: 40px;
+			height: 200px;
+			background: #d81f26;
+		}
+		span:nth-child(1){
+			right: 0;
+		}
+		span:nth-child(2){
+			left: 40px;
+			z-index: 1;
+			transform: skewX(22deg);
+			box-shadow: 0 0 15px #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>
